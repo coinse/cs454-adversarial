@@ -65,6 +65,8 @@ def _unnormalize(image_tensor:torch.Tensor):
 def get_viz_for(image_tensor:torch.Tensor, save_to:str='visualization.png', show_k=10, max_len=20):
     image_tensor = image_tensor.clip(-3, 3)
     assert image_tensor.size(0) == 1
+    raw_filename = "raw_{}".format(save_to)
+    torch.save(image_tensor, raw_filename)
     import matplotlib.pyplot as plt
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 4))
