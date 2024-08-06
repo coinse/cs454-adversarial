@@ -1,4 +1,4 @@
-# CS454 Genetic Programming for Adversarial Examples
+# CS454 Assignment 4: Genetic Programming for Adversarial Examples
 
 As described in the class, adversarial examples are a manifestation of metamorphic testing on machine learning modules. This coursework aims to help you generate adversarial examples of your own, both of the $\epsilon$-ball mathematical adversarial example variety and the 'realistic' adversarial examples perhaps more important to practical applications (like adding fog).
 
