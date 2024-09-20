@@ -68,7 +68,7 @@ As we still need some sort of metric to judge how much obscuring the "fog" is do
 
 ### Deliverables and Report
 
-Based on the contents of your `epsilon_ball.py` / `perlin_fog.py`, we will evaluate the $\epsilon$ that your solution achieves on a set of held-out images. Make sure not to change the command line interface, as your solution will be automatically graded. Your solution is expected to take **five** minutes at maximum to generate an adversarial example for `epsilon_ball.py` on CPU, and **ten** minutes for `perlin_fog.py`.
+Based on the contents of your `epsilon_ball.py` / `perlin_fog.py`, we will evaluate the $\epsilon$ that your solution achieves on a set of held-out images. Make sure not to change the function interface, as your solution will be automatically graded. Your solution is expected to take **three** minutes at maximum to generate an adversarial example for `epsilon_ball.py` on CPU, and **five** minutes for `perlin_fog.py`. See `grade.py` for an example of a grading script. (The actual grading will use the same logic, but will use additional safeguards to prevent tampering of key functions such as the loss function when grading, as well as to deal with timeouts.)
 
 Finally, include a PDF report of your efforts when you are done. In the report, include the following: 
 
