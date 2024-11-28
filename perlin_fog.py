@@ -35,5 +35,8 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--filename', required=True, default='images/knot.jpg')
     args = parser.parse_args()
     
-    adv_image = adv_func(args.filename)
+    noise_genotype = adv_func(args.filename)
+    noise_img = genotype2phenotype(noise_genotype)
+    org_img = get_image_tensor_from(args.filename)
+    adv_image = add_noise_to_image(noise_img, org_img)
     get_viz_for(adv_image)
